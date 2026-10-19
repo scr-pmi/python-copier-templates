@@ -1,0 +1,18 @@
+# {{ project_name }}
+
+{{ project_description if project_description else "Python project managed with uv, Ruff, and prek." }}
+
+## Setup
+
+```powershell
+uv sync
+```
+
+## Common commands
+
+```powershell
+uv run ruff check .
+uv run ruff format .
+uv run pytest
+uv run prek run --all-files
+```
